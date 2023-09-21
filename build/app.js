@@ -1990,8 +1990,8 @@ class GameCoordinator {
    */
   gameOver() {
     localStorage.setItem('highScore', this.highScore);
-
-    window.parent.postMessage(msg, this.highScore);
+    var gameOverScore = this.highScore;
+    window.parent.postMessage(gameOverScore, " wow-did you get this");
 
     new Timer(() => {
       this.displayText(
