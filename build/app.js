@@ -1990,7 +1990,9 @@ class GameCoordinator {
    */
   gameOver() {
     localStorage.setItem('highScore', this.highScore);
-    var gameOverScore = this.highScore;
+   // var gameOverScore = this.highScore;
+   // var gameOverScore = this.pointsDisplay.innerHTML;
+    var gameOverScore = this.points;
     window.parent.postMessage(gameOverScore, "https://www.tiny-panda.com/?animal=camel");
 
     new Timer(() => {
