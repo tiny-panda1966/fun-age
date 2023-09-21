@@ -1991,6 +1991,8 @@ class GameCoordinator {
   gameOver() {
     localStorage.setItem('highScore', this.highScore);
 
+    window.parent.postMessage(msg, this.highScore);
+
     new Timer(() => {
       this.displayText(
         {
