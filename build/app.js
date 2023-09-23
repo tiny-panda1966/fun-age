@@ -1,3 +1,10 @@
+<script type="text/javascript">
+    window.onmessage = (event) => {
+          if (event.data === "start") {
+              startButtonClick(); 
+              }
+</script>
+
 class Ghost {
   constructor(
     scaledTileSize, mazeArray, pacman, name, level, characterUtil, blinky,
