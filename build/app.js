@@ -2371,6 +2371,11 @@ class GameCoordinator {
       );
     }
   }
+  window.onmessage = (event) => {
+    if (event.data === "start") {
+        startButtonClick(); 
+        }
+    }
 }
 
 
