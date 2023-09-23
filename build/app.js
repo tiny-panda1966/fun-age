@@ -1,9 +1,8 @@
-<script>
-    window.onmessage = (event) => {
-          if (event.data === "start") {
-              startButtonClick(); 
-              }
-</script>
+window.onmessage = (event) => {
+    if (event.data === "start") {
+        startButtonClick(); 
+}
+
 
 class Ghost {
   constructor(
