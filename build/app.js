@@ -1214,7 +1214,7 @@ class GameCoordinator {
     link.href = 'build/app.css';
 
     link.onload = this.preloadAssets.bind(this);
-
+    console.log("css loaded");
     head.appendChild(link);
   }
 
