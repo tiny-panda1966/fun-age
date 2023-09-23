@@ -147,7 +147,9 @@
         window.onmessage = (event) => {
           if (event.data === "start") {
             var elem = document.getElementById("game-start");
+            var elemSound = document.getElementById("sound-button");
             elem.click();
+            elemSound.click();
           }
         }
       </script>
