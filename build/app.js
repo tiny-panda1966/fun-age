@@ -1214,7 +1214,7 @@ class GameCoordinator {
     link.href = 'build/app.css';
 
     link.onload = this.preloadAssets.bind(this);
-    console.log("css loaded");
+    
     head.appendChild(link);
   }
 
@@ -1440,6 +1440,7 @@ class GameCoordinator {
             this.mainMenu.style.opacity = 1;
             this.mainMenu.style.visibility = 'visible';
           }, 1500);
+          console.log("loading container finished");
         })
         .catch(this.displayErrorMessage);
     });
