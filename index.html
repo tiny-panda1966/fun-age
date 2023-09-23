@@ -143,6 +143,15 @@
           let gameCoordinator = new GameCoordinator();
         }
       </script>
+      <script>
+        window.onmessage = (event) => {
+          if (event.data === "start") {
+            var elem = document.getElementById("game-start");
+            elem.click();
+          }
+        }
+      </script>
+       
     </div>
   </body>
 </html>
