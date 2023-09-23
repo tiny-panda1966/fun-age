@@ -1,6 +1,7 @@
 window.onmessage = (event) => {
     if (event.data === "start") {
         startButtonClick(); 
+    }
 }
 
 
