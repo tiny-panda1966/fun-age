@@ -140,9 +140,9 @@
 
       <script>
         window.onload = () => {
-          let gameCoordinator = new GameCoordinator();
+          let gameCoordinator = await new GameCoordinator();
+          console.log("game loaded");
         }
-        console.log("game loaded");
       </script>
     </div>
   </body>
