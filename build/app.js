@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script> type="text/javascript">
     window.onmessage = (event) => {
           if (event.data === "start") {
               startButtonClick(); 
