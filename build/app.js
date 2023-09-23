@@ -1252,11 +1252,6 @@ class GameCoordinator {
   /**
    * Reveals the game underneath the loading covers and starts gameplay
    */
-    window.onmessage = (event) => {
-    if (event.data === "start") {
-        startButtonClick(); 
-        }
-    }
     
   startButtonClick() {
     this.leftCover.style.left = '-50%';
