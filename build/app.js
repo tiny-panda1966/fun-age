@@ -1,10 +1,3 @@
-window.onmessage = (event) => {
-    if (event.data === "start") {
-        startButtonClick(); 
-    }
-}
-
-
 class Ghost {
   constructor(
     scaledTileSize, mazeArray, pacman, name, level, characterUtil, blinky,
@@ -1259,6 +1252,12 @@ class GameCoordinator {
   /**
    * Reveals the game underneath the loading covers and starts gameplay
    */
+    window.onmessage = (event) => {
+    if (event.data === "start") {
+        startButtonClick(); 
+        }
+    }
+    
   startButtonClick() {
     this.leftCover.style.left = '-50%';
     this.rightCover.style.right = '-50%';
